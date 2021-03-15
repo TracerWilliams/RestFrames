@@ -46,7 +46,7 @@ namespace RestFrames {
     
     for(int i = 0; i < m_Nmass-1; i++){
       m1 = GetDependancyStates(i).GetFourVector().M();
-      for(int j = i+1; i < m_Nmass; j++){
+      for(int j = i+1; j < m_Nmass; j++){
 	m2 = GetDependancyStates(j).GetFourVector().M();
 	diff += (m1-m2)*(m1-m2);
       }
